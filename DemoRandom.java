@@ -25,7 +25,7 @@ public class DemoRandom{
     }
     
     rng = new Random(seed);//seed of 100 is stored.
-    for(int i =  0; i < stuff.length; i++){
+    for(int i =  0; i < tester.length; i++){
       tester[i]=rng.nextInt() & 65535;
     }
 
@@ -38,16 +38,19 @@ public class DemoRandom{
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
-
-    System.out.println();
+    System.out.println("done");
     
     Arrays.sort(tester);
     for(int i =  0; i < tester.length; i++){
         System.out.print(tester[i]+",");
     }
+    System.out.println("done");
     
-    System.out.println(tester.equals(stuff));
-
+    for(int i =  0; i < tester.length; i++){
+      if (tester[i]!=stuff[i]){
+        System.out.print(i);
+      }
+    }
+    
   }
 }
-
