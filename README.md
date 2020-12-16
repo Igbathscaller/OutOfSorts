@@ -1,6 +1,6 @@
 # OutOfSorts
 
-Written by David Hu \nTwo
+Written by David Hu  
 Composed By David Hu
 Execution by David Hu
 Testing by David Hu
