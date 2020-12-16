@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Arrays;
 public class DemoRandom{
   public static void main(String[]args){
 
@@ -9,7 +10,7 @@ public class DemoRandom{
     
     Random rng;
     int[] stuff = new int[length];
-    
+    int[] tester = new int[length];
     /*
     for(int i =  0; i < 5; i++){
       System.out.println(rng.nextInt() % 1000);
@@ -22,6 +23,12 @@ public class DemoRandom{
     for(int i =  0; i < stuff.length; i++){
       stuff[i]=rng.nextInt() & 65535;
     }
+    
+    rng = new Random(seed);//seed of 100 is stored.
+    for(int i =  0; i < stuff.length; i++){
+      tester[i]=rng.nextInt() & 65535;
+    }
+
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
@@ -31,6 +38,12 @@ public class DemoRandom{
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
+
+    Arrays.sort(tester);
+    for(int i =  0; i < tester.length; i++){
+        System.out.print(tester[i]+",");
+    }
+    System.out.println(tester.equals(stuff));
 
   }
 }
