@@ -33,16 +33,19 @@ public class DemoRandom{
         System.out.print(stuff[i]+",");
     }
     System.out.println();
+    
     Sorts.bubbleSort(stuff);
-
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
 
+    System.out.println();
+    
     Arrays.sort(tester);
     for(int i =  0; i < tester.length; i++){
         System.out.print(tester[i]+",");
     }
+    
     System.out.println(tester.equals(stuff));
 
   }
