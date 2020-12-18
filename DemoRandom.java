@@ -34,7 +34,7 @@ public class DemoRandom{
     }
     System.out.println();
     
-    Sorts.selectionSort(stuff);
+    Sorts.insertionSort(stuff);
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
@@ -51,7 +51,7 @@ public class DemoRandom{
         System.out.print(i);
       }
     }
-    
+
     System.out.println("done");
     
   }

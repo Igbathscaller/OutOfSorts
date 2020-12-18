@@ -46,7 +46,19 @@ public class Sorts{
     *@param data  the elements to be sorted.
     */
     public static void insertionSort(int[] data){
-        
+        int position;
+        int temp;
+        for(int i = 1; i<data.length; i++){
+            position = i-1;
+            while (position > 0 && data[i]>data[position]){
+                position--;
+            }
+            temp = data[i];
+            for(int j = i;  j>position ; j--){
+                data[j]=data[j-1];
+            }
+            data[position]=temp;
+        }
     }
 
 
