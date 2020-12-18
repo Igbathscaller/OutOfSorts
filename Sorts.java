@@ -21,5 +21,34 @@ public class Sorts{
         }
     }
 
+    /**Selection sort of an int array. 
+    *@postcondition The array will be modified such that the elements will be in increasing order.
+    *@param data  the elements to be sorted.
+    */
+    public static void selectionSort(int[] data){
+        int min;
+        int temp;
+        for(int i = 0; i<data.length-1; i++){
+            min = i;
+            for(int j = i+1;j<data.length;j++){
+                if (data[min] > data[j])
+                min = j;
+            }
+            temp = data[i];
+            data[i] = data[min];
+            data[min] = temp;
+        }
+
+    }
+
+    /**Insertion sort of an int array. 
+    *@postcondition The array will be modified such that the elements will be in increasing order.
+    *@param data  the elements to be sorted.
+    */
+    public static void insertionSort(int[] data){
+        
+    }
+
+
 }
   

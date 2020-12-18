@@ -34,7 +34,7 @@ public class DemoRandom{
     }
     System.out.println();
     
-    Sorts.bubbleSort(stuff);
+    Sorts.selectionSort(stuff);
     for(int i =  0; i < stuff.length; i++){
         System.out.print(stuff[i]+",");
     }
@@ -51,6 +51,8 @@ public class DemoRandom{
         System.out.print(i);
       }
     }
+    
+    System.out.println("done");
     
   }
 }
