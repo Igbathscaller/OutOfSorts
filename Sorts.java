@@ -50,17 +50,20 @@ public class Sorts{
         int temp;
         for(int i = 1; i<data.length; i++){
             position = i-1;
-            while (position > 0 && data[i]>data[position]){
+            while (position >= 0 && data[i]<data[position]){
                 position--;
             }
+            position++;
             temp = data[i];
-            for(int j = i;  j>position ; j--){
+            for(int j = i;  j>position; j--){
                 data[j]=data[j-1];
             }
             data[position]=temp;
         }
     }
-
+    // 5, 4, 3, 2, 1
+    // 4, 5, 3, 2, 1
+    // 
 
 }
   
